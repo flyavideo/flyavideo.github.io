@@ -168,27 +168,22 @@
         <p class="section">&nbsp;</p>
         </br> 
         <p class="section"><b>Introduction</b></p>
-        <div style="text-align: center">
-            <video id="myVideo" autoplay loop muted style="max-width: 100%; height: auto;">
-                <source src="./assets/new.mp4" type="video/mp4" alt="" width="1080px">
-            </video>
-            <input type="range" id="volumeControl" value="100" step="1" max="100" />
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video Player</title>
+        </head>
+        <body>
+        <div style="text-align: center">    
+        <video width="800px" height=auto controls>
+        <source src="./assets/new.mp4" type="video/mp4">
+        </video>
         </div>
+        </body>
+        </html>
         
-        <script>
-            // 获取视频和音量控制元素
-            var video = document.getElementById("myVideo");
-            var volumeControl = document.getElementById("volumeControl");
-        
-            // 监听音量控制滑块的变化
-            volumeControl.addEventListener("input", function () {
-                // 将滑块值映射到视频的音量范围（0到1）
-                var volumeValue = parseFloat(volumeControl.value) / 100;
-                
-                // 设置视频的音量
-                video.volume = volumeValue;
-            });
-        </script>
         </br>    
         <p class="section"><b>Method</b></p>
         <div style="text-align: center">
