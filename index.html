@@ -168,27 +168,29 @@
         <p class="section">&nbsp;</p>
         </br> 
         <p class="section"><b>Introduction</b></p>
-        <div style="text-align: center">
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video Player</title>
+        </head>
+        <body>
+        <div style="text-align: center">    
+        <video width="800px" height=auto controls>
+        <source src="./assets/new.mp4" type="video/mp4">
+        </video>
+        </div>
+        </body>
+        </html>
+
+        <!-- <div style="text-align: center">
             <video id="myVideo" autoplay loop muted style="max-width: 100%; height: auto;">
                 <source src="./assets/new.mp4" type="video/mp4" alt="" width="1080px">
             </video>
-            <input type="range" id="volumeControl" value="100" step="1" max="100" />
-        </div>
-        
-        <script>
-            // 获取视频和音量控制元素
-            var video = document.getElementById("myVideo");
-            var volumeControl = document.getElementById("volumeControl");
-        
-            // 监听音量控制滑块的变化
-            volumeControl.addEventListener("input", function () {
-                // 将滑块值映射到视频的音量范围（0到1）
-                var volumeValue = parseFloat(volumeControl.value) / 100;
-                
-                // 设置视频的音量
-                video.volume = volumeValue;
-            });
-        </script>
+        </div> -->
+               
         </br>    
         <p class="section"><b>Method</b></p>
         <div style="text-align: center">
@@ -650,7 +652,7 @@
      
         </br>
         </br>
-        <p class="section"><b>Qualitative comparison with other methods.</b></p>
+        <p class="section"><b>Qualitative comparison with other methods</b></p>
         </br>
         <div class="container" style="min-height: 224px">
             <p style="text-align: center; font-size: 150%">Text-driven Video Editing</p>
@@ -668,9 +670,9 @@
                                 </tr>
                                 <tr>
                                     <th><div class="caption">"a jeep wrangler driving down a mountain road." -- Source Video</div></th>
-                                    <th><div class="caption">"a <span style="color: blue">red suv</span> driving <span style="color: red">in the snow</span>." <br> -- Tune-A-Video</div></th>
-                                    <th><div class="caption">"a <span style="color: blue">red suv</span> driving <span style="color: red">in the snow</span>." <br> -- Tokenflow</div></th>
-                                    <th><div class="caption">"a <span style="color: blue">red suv</span> driving <span style="color: red">in the snow</span>." <br> -- Fly-A-Video</span></div></th>
+                                    <th><div class="caption">"a <span style="color: blue">red suv</span> driving <span style="color: red">in the snow</span>." <br> -- Tune-A-Video <br> CILP-T: 31.13 <br> FC: 94.19</div></th>
+                                    <th><div class="caption">"a <span style="color: blue">red suv</span> driving <span style="color: red">in the snow</span>." <br> -- Tokenflow <br> CILP-T: 30.40 <br> FC: 95.07</div></th>
+                                    <th><div class="caption">"a <span style="color: blue">red suv</span> driving <span style="color: red">in the snow</span>." <br> -- Fly-A-Video <br> CILP-T: 32.20 <br> FC: 96.09</span></div></th>
                                 </tr>
                             </tbody>
                         </table>
@@ -687,9 +689,9 @@
                                 </tr>
                                 <tr>
                                     <th><div class="caption">"a seagull standing in the water."<br> -- Source Video</div></th>
-                                    <th><div class="caption">"a <span style="color: blue">yellow parrot</span> standing <span style="color: red">in the grass</span>."<br> -- Tune-A-Video</div></th>
-                                    <th><div class="caption">"a <span style="color: blue">yellow parrot</span> standing <span style="color: red">in the grass</span>."<br> -- Tokenflow</div></th>
-                                    <th><div class="caption">"a <span style="color: blue">yellow parrot</span> standing <span style="color: red">in the grass</span>."<br> -- Fly-A-Video</span></div></th>
+                                    <th><div class="caption">"a <span style="color: blue">yellow parrot</span> standing <span style="color: red">in the grass</span>."<br> -- Tune-A-Video <br> CILP-T: 28.17 <br> FC: 95.39 </div></th> 
+                                    <th><div class="caption">"a <span style="color: blue">yellow parrot</span> standing <span style="color: red">in the grass</span>."<br> -- Tokenflow <br> CILP-T: 33.52 <br> FC: 96.14 </div></th>
+                                    <th><div class="caption">"a <span style="color: blue">yellow parrot</span> standing <span style="color: red">in the grass</span>."<br> -- Fly-A-Video <br> CILP-T: 34.79 <br> FC: 96.95 </span></div></th>
                                 </tr>
                             </tbody>
                         </table>
@@ -707,9 +709,9 @@
                                 </tr>
                                 <tr>
                                     <th><div class="caption">"A bird flying in the sky."<br> -- Source Video</div></th>
-                                    <th><div class="caption">"an <span style="color: blue">owl flying</span> <span style="color: red">on the mountain, van gogh style</span>." <br>-- Tune-A-Video</div></th>
-                                    <th><div class="caption">"an <span style="color: blue">owl flying</span> <span style="color: red">on the mountain, van gogh style</span>." <br>-- Tokenflow</div></th>
-                                    <th><div class="caption">"an <span style="color: blue">owl flying</span> <span style="color: red">on the mountain, van gogh style</span>." <br>-- Fly-A-Video</span></div></th>
+                                    <th><div class="caption">"an <span style="color: blue">owl flying</span> <span style="color: red">on the mountain, van gogh style</span>." <br>-- Tune-A-Video <br> CILP-T: 25.15 <br> FC: 93.58</div></th>
+                                    <th><div class="caption">"an <span style="color: blue">owl flying</span> <span style="color: red">on the mountain, van gogh style</span>." <br>-- Tokenflow <br> CILP-T: 27.27 <br> FC: 95.70</div></th>
+                                    <th><div class="caption">"an <span style="color: blue">owl flying</span> <span style="color: red">on the mountain, van gogh style</span>." <br>-- Fly-A-Video <br> CILP-T: 37.04 <br> FC: 96.09</span></div></th>
                                 </tr>
                             </tbody>
                         </table>
@@ -760,8 +762,8 @@
                                 <tr>
                                     <th><div class="caption">"a jeep wrangler driving down a mountain road." -- Source Video</div></th>
                                     <th><div class="caption"></div></th>
-                                    <th><div class="caption">"a <span style="color: blue">red suv</span> driving <span style="color: red">in the snow</span>."<br> -- Make-A-Protagonist</div></th>
-                                    <th><div class="caption">"a <span style="color: blue">red suv</span> driving <span style="color: red">in the snow</span>."<br> -- Fly-A-Video</span></div></th>
+                                    <th><div class="caption">"a <span style="color: blue">red suv</span> driving <span style="color: red">in the snow</span>."<br> -- Make-A-Protagonist <br> CILP-T: 29.17 <br> FC: 93.41</div></th>
+                                    <th><div class="caption">"a <span style="color: blue">red suv</span> driving <span style="color: red">in the snow</span>."<br> -- Fly-A-Video <br> CILP-T: 29.88 <br> FC: 94.97</span></div></th>
                                 </tr>
                             </tbody>
                         </table>
@@ -779,8 +781,8 @@
                                 <tr>
                                     <th><div class="caption">"a <span style="color: blue">yellow parrot</span> standing <span style="color: red">in the grass</span>."<br> -- Source Video</span></div></th>
                                     <th><div class="caption"></div></th>
-                                    <th><div class="caption">"a <span style="color: blue">yellow parrot</span> standing <span style="color: red">in the grass</span>."<br> -- Make-A-Protagonist</span></div></th>
-                                    <th><div class="caption">"a <span style="color: blue">yellow parrot</span> standing <span style="color: red">in the grass</span>."<br> -- Fly-A-Video</span></div></th>
+                                    <th><div class="caption">"a <span style="color: blue">yellow parrot</span> standing <span style="color: red">in the grass</span>."<br> -- Make-A-Protagonist <br> CILP-T: 33.89 <br> FC: 96.00</span></div></th>
+                                    <th><div class="caption">"a <span style="color: blue">yellow parrot</span> standing <span style="color: red">in the grass</span>."<br> -- Fly-A-Video <br> CILP-T: 33.91 <br> FC: 96.53</span></div></th>
                                 </tr>
                             </tbody>
                         </table>
@@ -798,8 +800,8 @@
                                 <tr>
                                     <th><div class="caption">"A bird flying in the sky."<br> -- Source Video</div></th>
                                     <th><div class="caption"></div></th>
-                                    <th><div class="caption">"an <span style="color: blue">owl flying</span> <span style="color: red">on the mountain, van gogh style</span>." <br>-- Make-A-Protagonist</div></th>
-                                    <th><div class="caption">"an <span style="color: blue">owl flying</span> <span style="color: red">on the mountain, van gogh style</span>." <br>-- Fly-A-Video</span></div></th>
+                                    <th><div class="caption">"an <span style="color: blue">owl flying</span> <span style="color: red">on the mountain, van gogh style</span>." <br>-- Make-A-Protagonist <br> CILP-T: 38.50 <br> FC: 92.09</div></th>
+                                    <th><div class="caption">"an <span style="color: blue">owl flying</span> <span style="color: red">on the mountain, van gogh style</span>." <br>-- Fly-A-Video <br> CILP-T: 38.53 <br> FC: 94.68</span></div></th>
                                 </tr>
                             </tbody>
                         </table>
@@ -832,7 +834,7 @@
 
         </br>
         </br>
-        <p class="section"><b>Ablation study.</b></p>
+        <p class="section"><b>Ablation study</b></p>
         </br>
         <div class="container" style="min-height: 224px">
             <p style="text-align: center; font-size: 150%"> W/o Frequence Optimization Module</p>
@@ -843,16 +845,18 @@
                         <table width="800px" align="center">
                             <tbody>
                                 <tr>
-                                    <th><img width="224" src="./assets/data_new/ikun.gif" /></th>
-                                    <th><img width="224" src="./assets/reference_new/ikun/pyy.jpg" /></th>
+                                    <th><img width="200" src="./assets/data_new/ikun.gif" /></th>
+                                    <th><img width="200" src="./assets/reference_new/ikun/pyy.jpg" /></th>
+                                    <th><img width="224" src="./assets/results_new/ikun/0-A man is playing a basketball on the moon.gif" /></th>
                                     <th><img width="224" src="./assets/results_new/ikun/woF.gif" /></th>
                                     <th><img width="224" src="./assets/results_new/ikun/our.gif" /></th>
                                 </tr>
                                 <tr>
                                     <th><div class="caption">"A man is playing basketball."<br> -- Source Video</div></th>
                                     <th><div class="caption"></div></th>
-                                    <th><div class="caption">"A man is playing a basketball <span style="color: red">on the moon</span>." <br> -- W/o Fre Opt Module</div></th>
-                                    <th><div class="caption">"A man is playing a basketball <span style="color: red">on the moon</span>." <br>  -- Fly-A-Video</span></div></th>
+                                    <th><div class="caption">"A man is playing a basketball <span style="color: red">on the moon</span>." <br> -- Make-A-Protagonist <br> CILP-T: 29.83 <br> FC: 88.42</div></th>
+                                    <th><div class="caption">"A man is playing a basketball <span style="color: red">on the moon</span>." <br> -- W/o Fre Opt Module <br> CILP-T: 33.52 <br> FC: 93.31</div></th>
+                                    <th><div class="caption">"A man is playing a basketball <span style="color: red">on the moon</span>." <br>  -- Fly-A-Video <br> CILP-T: 33.71 <br> FC: 93.7</span></div></th>
                                 </tr>
                             </tbody>
                         </table>
@@ -862,16 +866,18 @@
                         <table width="800px" align="center">
                             <tbody>
                                 <tr>
-                                    <th><img width="224" src="./assets/data_new/capybara.gif" /></th>
-                                    <th><img width="224" src="./assets/reference_new/capybara/hippo.jpg" /></th>
+                                    <th><img width="200" src="./assets/data_new/capybara.gif" /></th>
+                                    <th><img width="200" src="./assets/reference_new/capybara/hippo.jpg" /></th>
+                                    <th><img width="224" src="./assets/results_new/capybara/5-a hippo walking on the grass.gif" /></th>
                                     <th><img width="224" src="./assets/results_new/capybara/woF.gif" /></th>
                                     <th><img width="224" src="./assets/results_new/capybara/our.gif" /></th>
                                 </tr>
                                 <tr>
                                     <th><div class="caption">"a capybara walking in a zoo"<br> -- Source Video</div></th>
                                     <th><div class="caption"></div></th>
-                                    <th><div class="caption">"a <span style="color: blue">hippo</span> walking <span style="color: red">on the grass</span>." <br> -- W/o Fre Opt Module</div></th>
-                                    <th><div class="caption">"a <span style="color: blue">hippo</span> walking <span style="color: red">on the grass</span>." <br> -- Fly-A-Video</div></th>
+                                    <th><div class="caption">"a <span style="color: blue">hippo</span> walking <span style="color: red">on the grass</span>." <br> -- Make-A-Protagonist <br> CILP-T: 32.29 <br> FC: 95.01</div></th>
+                                    <th><div class="caption">"a <span style="color: blue">hippo</span> walking <span style="color: red">on the grass</span>." <br> -- W/o Fre Opt Module <br> CILP-T: 31.74 <br> FC: 95.75</div></th>
+                                    <th><div class="caption">"a <span style="color: blue">hippo</span> walking <span style="color: red">on the grass</span>." <br> -- Fly-A-Video <br> CILP-T: 33.30 <br> FC: 96.87</div></th>
                                 </tr>
                             </tbody>
                         </table>
@@ -882,16 +888,18 @@
                         <table width="800px" align="center">
                             <tbody>
                                 <tr>
-                                    <th><img width="224" src="./assets/data_new/wolf.gif" /></th>
-                                    <th><img width="224" src="./assets/reference_new/wolf/dog.jpg" /></th>
+                                    <th><img width="200" src="./assets/data_new/wolf.gif" /></th>
+                                    <th><img width="200" src="./assets/reference_new/wolf/dog.jpg" /></th>
+                                    <th><img width="224" src="./assets/results_new/wolf/3-A dog walking on the road.gif" /></th>
                                     <th><img width="224" src="./assets/results_new/wolf/woF.gif" /></th>
                                     <th><img width="224" src="./assets/results_new/wolf/our.gif" /></th>
                                 </tr>
                                 <tr>
                                     <th><div class="caption">"a wolf walking through a field."<br> -- Source Video</div></th>
                                     <th><div class="caption"></div></th>
-                                    <th><div class="caption">"A <span style="color: blue">dog</span> walking <span style="color: red">on the road</span>." <br>-- W/o Fre Opt Module</div></th>
-                                    <th><div class="caption">"A <span style="color: blue">dog</span> walking <span style="color: red">on the road</span>." <br>-- Fly-A-Video</span></div></th>
+                                    <th><div class="caption">"A <span style="color: blue">dog</span> walking <span style="color: red">on the road</span>." <br>-- Make-A-Protagonist <br> CILP-T: 33.25 <br> FC: 93.99</div></th>
+                                    <th><div class="caption">"A <span style="color: blue">dog</span> walking <span style="color: red">on the road</span>." <br>-- W/o Fre Opt Module <br> CILP-T: 32.91 <br> FC: 96.02</div></th>
+                                    <th><div class="caption">"A <span style="color: blue">dog</span> walking <span style="color: red">on the road</span>." <br>-- Fly-A-Video <br> CILP-T: 33.35 <br> FC: 95.98</span></div></th>
                                 </tr>
                             </tbody>
                         </table>
@@ -934,16 +942,18 @@
                         <table width="800px" align="center">
                             <tbody>
                                 <tr>
-                                    <th><img width="224" src="./assets/data_new/ikun.gif" /></th>
-                                    <th><img width="224" src="./assets/reference_new/ikun/pyy.jpg" /></th>
+                                    <th><img width="200" src="./assets/data_new/ikun.gif" /></th>
+                                    <th><img width="200" src="./assets/reference_new/ikun/pyy.jpg" /></th>
+                                    <th><img width="224" src="./assets/results_new/ikun/0-A man is playing a basketball on the moon.gif" /></th>
                                     <th><img width="224" src="./assets/results_new/ikun/woA.gif" /></th>
                                     <th><img width="224" src="./assets/results_new/ikun/our.gif" /></th>
                                 </tr>
                                 <tr>
                                     <th><div class="caption">"A man is playing basketball."<br> -- Source Video</div></th>
                                     <th><div class="caption"></div></th>
-                                    <th><div class="caption">"A man is playing a basketball <span style="color: red">on the moon</span>." <br> -- W/o Attn Layers</div></th>
-                                    <th><div class="caption">"A man is playing a basketball <span style="color: red">on the moon</span>." <br>  -- Fly-A-Video</span></div></th>
+                                    <th><div class="caption">"A man is playing a basketball <span style="color: red">on the moon</span>." <br> -- Make-A-Protagonist <br> CILP-T: 29.83 <br> FC: 88.42</div></th>
+                                    <th><div class="caption">"A man is playing a basketball <span style="color: red">on the moon</span>." <br> -- W/o Attn Layers <br> CILP-T: 31.32 <br> FC: 90.62</div></th>
+                                    <th><div class="caption">"A man is playing a basketball <span style="color: red">on the moon</span>." <br>  -- Fly-A-Video <br> CILP-T: 33.71 <br> FC: 93.70</span></div></th>
                                 </tr>
                             </tbody>
                         </table>
@@ -953,16 +963,18 @@
                         <table width="800px" align="center">
                             <tbody>
                                 <tr>
-                                    <th><img width="224" src="./assets/data_new/capybara.gif" /></th>
-                                    <th><img width="224" src="./assets/reference_new/capybara/hippo.jpg" /></th>
+                                    <th><img width="200" src="./assets/data_new/capybara.gif" /></th>
+                                    <th><img width="200" src="./assets/reference_new/capybara/hippo.jpg" /></th>
+                                    <th><img width="224" src="./assets/results_new/capybara/5-a hippo walking on the grass.gif" /></th>
                                     <th><img width="224" src="./assets/results_new/capybara/woA.gif" /></th>
                                     <th><img width="224" src="./assets/results_new/capybara/our.gif" /></th>
                                 </tr>
                                 <tr>
                                     <th><div class="caption">"a capybara walking in a zoo"<br> -- Source Video</div></th>
                                     <th><div class="caption"></div></th>
-                                    <th><div class="caption">"a <span style="color: blue">hippo</span> walking <span style="color: red">on the grass</span>." <br> -- W/o Attn Layers</div></th>
-                                    <th><div class="caption">"a <span style="color: blue">hippo</span> walking <span style="color: red">on the grass</span>." <br> -- Fly-A-Video</div></th>
+                                    <th><div class="caption">"a <span style="color: blue">hippo</span> walking <span style="color: red">on the grass</span>." <br> -- Make-A-Protagonist <br> CILP-T: 32.29 <br> FC: 95.01</div></th>
+                                    <th><div class="caption">"a <span style="color: blue">hippo</span> walking <span style="color: red">on the grass</span>." <br> -- W/o Attn Layers <br> CILP-T: 31.96 <br> FC: 95.21 </div></th>
+                                    <th><div class="caption">"a <span style="color: blue">hippo</span> walking <span style="color: red">on the grass</span>." <br> -- Fly-A-Video <br> CILP-T: 33.30 <br> FC: 96.87</div></th>
                                 </tr>
                             </tbody>
                         </table>
@@ -972,16 +984,18 @@
                         <table width="800px" align="center">
                             <tbody>
                                 <tr>
-                                    <th><img width="224" src="./assets/data_new/wolf.gif" /></th>
-                                    <th><img width="224" src="./assets/reference_new/wolf/dog.jpg" /></th>
+                                    <th><img width="200" src="./assets/data_new/wolf.gif" /></th>
+                                    <th><img width="200" src="./assets/reference_new/wolf/dog.jpg" /></th>
+                                    <th><img width="224" src="./assets/results_new/wolf/3-A dog walking on the road.gif" /></th>
                                     <th><img width="224" src="./assets/results_new/wolf/woA.gif" /></th>
                                     <th><img width="224" src="./assets/results_new/wolf/our.gif" /></th>
                                 </tr>
                                 <tr>
                                     <th><div class="caption">"a wolf walking through a field."<br> -- Source Video</div></th>
                                     <th><div class="caption"></div></th>
-                                    <th><div class="caption">"A <span style="color: blue">dog</span> walking <span style="color: red">on the road</span>." <br>-- W/o Attn Layers</div></th>
-                                    <th><div class="caption">"A <span style="color: blue">dog</span> walking <span style="color: red">on the road</span>." <br>-- Fly-A-Video</span></div></th>
+                                    <th><div class="caption">"A <span style="color: blue">dog</span> walking <span style="color: red">on the road</span>." <br>-- Make-A-Protagonist <br> CILP-T: 33.25 <br> FC: 93.99</div></th>
+                                    <th><div class="caption">"A <span style="color: blue">dog</span> walking <span style="color: red">on the road</span>." <br>-- W/o Attn Layers <br> CILP-T: 33.30 <br> FC: 95.21</div></th>
+                                    <th><div class="caption">"A <span style="color: blue">dog</span> walking <span style="color: red">on the road</span>." <br>-- Fly-A-Video <br> CILP-T: 33.35 <br> FC: 95.98</span></div></th>
                                 </tr>
                             </tbody>
                         </table>
@@ -1018,6 +1032,8 @@
 
     <footer class="footer">
         <p style="text-align: center;">
+            Each quantitative results of experiments is repeated three times to calculate the average. FC is frame consistency.
+        </br>
             This page was adapted from <a href="https://tuneavideo.github.io/">Tune-A-Video</a>.
         </p>
     </footer>
