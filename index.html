@@ -163,9 +163,23 @@
         <p class="section">&nbsp;</p>
 
         <p style="text-align: center;"><span class="section"><b>Abstract</b></span></p>
-        <p style="text-align: justify; display: flex; justify-content: center; max-width: 800px; margin:auto"> 
-            Recently, text-image jointly driven video editing based on diffusion models has achieved great success. Nonetheless, in complex dynamic scenes (with large pixel differences between adjacent frames), current video editing techniques still suffer from frame inconsistency issues (key content loss and color discontinuity in motion). In this work, we introduce Fly-A-Video, an innovative general-purpose video editing framework that utilizes a frequency-level frame-consistency diffusion model to generate a high-quality coherent video. 1) Our core idea is to build a frequency optimization module through discrete cosine transform (DCT) in the diffusion model to decompose the video temporal dimension features into different frequency components. The low-frequency component usually contains key content features, and the high-frequency component contains the differences between adjacent frames. Therefore, we actively strengthen the weight of low-frequency components and relatively weaken the influence of high-frequency components, thereby improving frame consistency when generating video sequences. 2) In addition, we also introduce a simple frequency-level attention mechanism. The correlation is calculated using frequency domain features of the current frame and all frames in the video. This operation assists in frame consistency during video editing. We conduct a comprehensive evaluation of our approach on different video datasets, demonstrating superior performance in terms of visual coherence quality, diversity, and textual content consistency compared to existing methods.
-        <p class="section">&nbsp;</p>
+        <body>
+                <p>Recently, there has been notable success in the field of video editing through the integration of text-image-driven techniques based on diffusion models. However, challenges persist, particularly in handling complex dynamic scenes characterized by substantial pixel variations between consecutive frames. Existing video editing methods struggle with frame inconsistency issues, leading to key content loss and color disruptions in motion.</p>
+            
+                <p>In our research, we present Fly-A-Video, a pioneering general-purpose video editing framework designed to address these challenges. We leverage a frequency-level frame-consistency diffusion model to generate high-quality, coherent videos. Our approach involves two key innovations:</p>
+            
+                <ol>
+                    <li>
+                        <strong>Frequency Optimization Module:</strong> We propose the incorporation of a discrete cosine transform (DCT) in the diffusion model to establish a frequency optimization module. This module decomposes temporal features of the video into distinct frequency components. Notably, the low-frequency component encapsulates crucial content features, while the high-frequency component captures differences between adjacent frames. By reinforcing the significance of low-frequency components and mitigating the impact of high-frequency ones, we enhance frame consistency in video sequence generation.
+                    </li>
+            
+                    <li>
+                        <strong>Frequency-Level Attention Mechanism:</strong> Additionally, we introduce a straightforward frequency-level attention mechanism. This mechanism calculates correlations using frequency domain features of the current frame and all frames in the video, contributing to improved frame consistency during video editing.
+                    </li>
+                </ol>
+            
+                <p>We conducted a thorough evaluation of our approach across diverse video datasets, showcasing its superior performance in terms of visual coherence quality, diversity, and textual content consistency compared to existing methods.</p>
+            </body>
         </br> 
         <p class="section"><b>Introduction</b></p>
 
